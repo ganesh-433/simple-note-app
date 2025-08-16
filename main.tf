@@ -1,19 +1,7 @@
-# Configure the Google Cloud provider
-terraform {
-  required_providers {
-    google = {
-      source = "hashicorp/google"
-      version = ">= 5.0"
-    }
-  }
-}
-
 provider "google" {
   project = "project-demos-469216"
   region  = "us-central1"
   zone    = "us-central1-a"
-  # You can use Application Default Credentials or a key file
-  credentials = file("C:/Users/hr433/Downloads/project-demos-469216-6a14b6c85e02.json")
 }
 
 # Create a network and firewall rule
